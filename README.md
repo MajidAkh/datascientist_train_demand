@@ -37,11 +37,11 @@ docker run -it datascientist
 ```
 ### Data analysis
 
-The data analysis performed is in the "data_analysis" notebook. I did not find any outliers, the data was really already processed very well initially.
+The data analysis performed is in the "data_analysis" notebook. I did not find any outliers, the data was already processed initially.
 
 Among other things, I deleted all the values at -1 for the "od_number_of_similar_X_hours".
 
-Also two columns were identical, if I remember correctly they were the sale_month and sale_week columns I made the correction.
+Also two columns were identical, if I remember correctly it was the sale_month and sale_week columns I made the correction.
 
 
 ### Model training
