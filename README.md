@@ -67,8 +67,8 @@ The choice of 20 is an arbitrary choice it is easy to change it in the code, it 
 ### Improvement clue
 
 
-Several avenues for improvement are possible, the first is the study of the use of a model other than the XGBoost. I chose the latter because it is generally the best model for forecasting on structured data.
+Several improvements are possible, the first is the study of use of other model than the XGBoost. I chose the latter because it is generally the best model for forecasting on structured data.
 
-I used bayesian optimization for the hyperparameterization of the model, however not having the necessary computing power I had to limit the search for the optimal parameter. We can therefore hope that more in-depth research would provide better performance.
+I used Bayesian optimization for the hyperparameterization of the model, however not having the necessary computing power I had to limit the search for the optimal parameter. We can therefore hope that more in-depth research would provide better performance.
 
 In addition, the increase in data, I think that by coupling data to that present in the dataset we can obtain better performance, especially meteorological data. It is not absurd to think that there is a correlation between going on vacation and the weather.
