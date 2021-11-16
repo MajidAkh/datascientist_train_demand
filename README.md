@@ -71,7 +71,7 @@ The choice of 20 is an arbitrary choice it is easy to change it in the code, it 
 
 ### Performance XGBOOST for revenu target.
 
-
+![](demand_prediction_from_revenu_target.png)
 
 ### Performance comparaison
 
