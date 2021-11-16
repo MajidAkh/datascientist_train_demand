@@ -67,7 +67,7 @@ The choice of 20 is an arbitrary choice it is easy to change it in the code, it 
 ### Performance XGBOOST for revenu target.
 
 
-![](Dragster.jpg)
+![](demand_vs_revenu.png)
 
 ### Performance XGBOOST for revenu target.
 
