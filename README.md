@@ -73,7 +73,7 @@ The choice of 20 is an arbitrary choice it is easy to change it in the code, it 
 
 ![](demand_prediction_from_revenu.png)
 
-### Performance comparaison
+### Performance comparison
 
 ![](demand_vs_revenu.png)
 
