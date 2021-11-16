@@ -64,6 +64,13 @@ The code offers a random draw of 20 train id as an evaluation sample as an evalu
 
 The choice of 20 is an arbitrary choice it is easy to change it in the code, it is a global variable in the evaluation script.
 
+### Performance XGBOOST for revenu target.
+
+
+![](Dragster.jpg)
+
+### Performance XGBOOST for revenu target.
+
 ### Improvement clue
 
 
@@ -72,3 +79,4 @@ Several improvements are possible, the first is the study of use of other model 
 I used Bayesian optimization for the hyperparameterization of the model, however not having the necessary computing power I had to limit the search for the optimal parameter. We can therefore hope that more in-depth research would provide better performance.
 
 In addition, the increase in data, I think that by coupling data to that present in the dataset we can obtain better performance, especially meteorological data. It is not absurd to think that there is a correlation between going on vacation and the weather.
+
