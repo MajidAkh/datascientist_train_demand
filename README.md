@@ -64,12 +64,18 @@ The code offers a random draw of 20 train id as an evaluation sample as an evalu
 
 The choice of 20 is an arbitrary choice it is easy to change it in the code, it is a global variable in the evaluation script.
 
+### Performance XGBOOST for demand target.
+![](demand_prediction_demand_pred_real.png)
+
+
+
 ### Performance XGBOOST for revenu target.
 
+
+
+### Performance comparaison
 
 ![](demand_vs_revenu.png)
-
-### Performance XGBOOST for revenu target.
 
 ### Improvement clue
 
