@@ -43,20 +43,6 @@ def preprocess(df_):
                 ]
     df['sale_week'] = sale_week
     
-    df['cum_demand'] = df.groupby(['trip_id'], sort=False).demand.cumsum()
-    # Add new column: final_demand  =  as max(cum_bookings) for a given deparrture date  
-    df['final_demand'] = df.groupby(['trip_id'], sort=False)['cum_demand'].transform(max) 
-    # Add new colum: remaining_demand = final_demand - cum_bookings
-    df['remaining_demand'] = df['final_demand'] - df['cum_demand']
-    #Historical avg_booking_rates_demands for each day_prior (into) week_day combination     
-    df['avg_remaining_demand'] = df.groupby(['sale_day_x'], sort=False)['remaining_demand'].transform(np.mean)  
-    # Add new colum: booking_rate = cum_bookings / final_demand  
-    df['booking_rate'] = df['cum_demand'] / df['final_demand']
-    # Historical avg_booking_rates_demands for each day_prior (into) week_day combination     
-    df['avg_booking_rate_weekday'] = df.groupby(['sale_day_x', 'sale_weekday'], sort=False)['booking_rate'].transform(np.mean)  
-    # Historical avg_booking_rates_demands for each day_prior      
-    df['avg_booking_rate'] = df.groupby(['sale_day_x'], sort=False)['booking_rate'].transform(np.mean)
-    
     categorical_features_redondance = ['departure_date','sale_date','dataset_type','destination_station_name','origin_station_name']
     categorical_features_to_process = ['trip_or_dest']
     df = df.drop(columns=categorical_features_redondance)
